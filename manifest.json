@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Astronomy Picture of the Day Theme",
+  "description": "Theme that switches your background to the NASA Astronomy Picture of the Day.",
+  "version": "1.0.0",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "<all_urls>",
+    "alarms",
+    "theme"
+  ]
+}
