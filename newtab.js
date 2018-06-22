@@ -19,15 +19,7 @@ async function update() {
     let uri = URL.createObjectURL(blob);
     var reader  = new FileReader();
     reader.addEventListener("load", function () {
-      browser.theme.update({
-        images: {
-          headerURL: reader.result
-        },
-        colors: {
-          textcolor: '#fff',
-          accentcolor: '#000'
-        }
-      });
+      document.body.style.backgroundImage = 'url("' + reader.result + '")';
     }, false);
     reader.readAsDataURL(blob);
   }

@@ -6,6 +6,9 @@
   "background": {
     "scripts": ["background.js"]
   },
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  },
   "permissions": [
     "<all_urls>",
     "alarms",
